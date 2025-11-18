@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+    <title>Register with GoldenGear | Start Earning Rewards</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sign up with GoldenGear to start earning rewards by sharing our home appliances with friends. Easy registration and instant referral code.">
+    <meta name="keywords" content="GoldenGear, register, sign up, home appliances, promo, referral code, earn rewards">
+    <meta name="author" content="GoldenGear">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+    <style>
+        body {
+            background: white;
+            font-family: Arial;
+        }
+        header {
+            background: #FFD700;
+            padding: 20px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            text-align: right;
+            padding: 15px;
+            background: #fff6cc;
+        }
+nav {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+        nav a {
+            margin: 15px;
+            font-size: 18px;
+            color: #c59e00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .form-box {
+            width: 40%;
+            margin: auto;
+            margin-top: 40px;
+            padding: 30px;
+            border: 2px solid #FFD700;
+            background: #fffdf0;
+            border-radius: 10px;
+        }
+        input {
+            width: 95%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #FFD700;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #FFD700;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #333;
+        }
+        footer{
+      background-color:white;
+      color:black;
+      justify-content:center;
+      align-text:center;
+      display:flex;
+      
+    }
+    </style>
+</head>
+<body>
+
+<header><h1>REGISTER</h1></header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/register">Register</a>
+</nav>
+
+<div class="form-box">
+    {% if error %}
+<p style="color:red; font-weight:bold;">{{ error }}</p>
+{% endif %}
+    <form method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Submit Registration</button>
+    </form>
+</div>
+<footer>
+                <p>Copyright &copy; 2025 GoldenGear Appliances. All rights preserved🙏.</p>
+</footer>
+</body>
+</html>

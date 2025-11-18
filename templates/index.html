@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <head>
+    <title>GoldenGear Promo Home Appliances | Earn Rewards by Referrals</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="GoldenGear Promo Home Appliances allows you to earn rewards by promoting our appliances. Share products with friends and earn referral bonuses.">
+    <meta name="keywords" content="GoldenGear, home appliances, promo, referral rewards, earn money, share products">
+    <meta name="author" content="GoldenGear">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+    <style>
+        body {
+            margin: 0;
+            background: white;
+            font-family: Arial;
+        }
+   
+        header {
+            background: #FFD700;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            text-align: right;
+            padding: 15px;
+            background: #fff6cc;
+        }
+        nav {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+        nav a {
+            margin: 15px;
+            font-size: 18px;
+            color: #c59e00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+.product {
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background: #fffef2;
+}
+.product img {
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.product p {
+    font-weight: bold;
+    color: #c59e00;
+}
+footer{
+      background-color:white;
+      color:black;
+      justify-content:center;
+      align-text:center;
+      display:flex;
+      
+    }
+
+    
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GoldenGear Appliances</h1>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/register">Register</a>
+</nav>
+
+<!-- 4 ROWS × 4 COLUMNS -->
+<div class="grid">
+
+    <!-- 1 -->
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/kettle.jpeg') }}" alt="Eectric Kettle">
+        <p>Electric Kettle</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="product">
+       <img src="{{ url_for('static', filename='images/blender.jpeg') }}" alt="Blender">
+        <p>Blender</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/microwave.jpeg') }}" alt="Microwave">
+        <p>Microwave</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/toaster.jpeg') }}" alt="Toaster">
+        <p>Toaster</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/tv.png') }}" alt="Tv (43inch)">
+        <p>TV (42 inch)</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="product">
+         <img src="{{ url_for('static', filename='images/speker.jpeg') }}" alt="Home Speaker">
+        <p>Home Speaker</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/fan.jpeg') }}" alt="Standing Fan">
+        <p>Standing Fan</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/iron.jpeg') }}" alt="Steam Iron">
+        <p>Steam Iron</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/cooker.jpeg') }}" alt="Rice Cooker">
+        <p>Rice Cooker</p>
+    </div>
+
+    <!-- 10 -->
+    <div class="product">
+       <img src="{{ url_for('static', filename='images/coffee.jpeg') }}" alt="Coffee Maker">
+        <p>Coffee Maker</p>
+    </div>
+
+    <!-- 11 -->
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/air.jpg') }}" alt="Air Fryer">
+        <p>Air Fryer</p>
+    </div>
+
+    <!-- 12 -->
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/heater.jpeg') }}" alt="Electric Heater">
+        <p>Electric Heater</p>
+    </div>
+
+    <!-- 13 -->
+    <div class="product">
+         <img src="{{ url_for('static', filename='images/vacuum.jpeg') }}" alt="Vacuum Cleaner">
+        <p>Vacuum Cleaner</p>
+    </div>
+
+    <!-- 14 -->
+    <div class="product">
+         <img src="{{ url_for('static', filename='images/dispenser.jpeg') }}" alt="Water Dispenser">
+        <p>Water Dispenser</p>
+    </div>
+
+    <!-- 15 -->
+    <div class="product">
+       <img src="{{ url_for('static', filename='images/juice.jpeg') }}" alt="Juicer Machine">
+        <p>Juicer Machine</p>
+    </div>
+
+    <!-- 16 -->
+    <div class="product">
+        <img src="{{ url_for('static', filename='images/presure.jpeg') }}" alt="Pressure Cooker">
+        <p>Pressure Cooker</p>
+    </div>
+ 
+</div>
+<footer>
+                <p>Copyright &copy; 2025 GoldenGear Appliances. All rights preserved🙏.</p>
+</footer>
+
+</body>
+</html>
